@@ -1,5 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+ here the home page contain only a button and on clicking on it a modal will appear , the task added will be stored in local storage using context api . 
+ using see all the task added .
 ## Getting Started
 
 First, run the development server:

@@ -13,19 +13,20 @@ export default function App(props) {
 
   const addTodo=(todo)=>{
     setTodos((prev)=>[...prev,{id:Date.now(),...todo}]);
-    console.log(todos);
+    
   }
   const updateTodo=(id,todo)=>{
     setTodos((prev)=>prev.map((prevTodo)=>(prevTodo.id===id ? todo : prevTodo)))
   }
   const deleteTodo=(id)=>{
     setTodos((prev)=>prev.filter((todo)=>todo.id!==id))
+    console.log(todos);
   }
   useEffect(()=>{
-   const todos= JSON.parse(localStorage.getItem("todos"));
+   const Todos= JSON.parse(localStorage.getItem("todos"));
 
-   if(todos && todos.length>0){
-      setTodos(todos);
+   if(Todos && Todos.length>0){
+      setTodos(Todos);
    }
   },[])
   useEffect(()=>{

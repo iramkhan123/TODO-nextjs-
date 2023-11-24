@@ -57,7 +57,7 @@ function HomePage() {
          <Button style={{height:"5rem",width:"12rem", backgroundColor:"#4F6F52",fontFamily:"Papyrus",fontWeight:"bold",fontSize:"1.8rem"}} onClick={() => setOpen(true)} size="xl" type="button">Add New Task</Button>
         
          <div> 
-    <Modal show={isOpen} onClose={() => setOpen(false)} >
+         <Modal show={isOpen} onClose={() => setOpen(false)} >
     <Modal.Header style={{backgroundColor:"#B2C8BA",fontFamily:"Papyrus"}}>
     <div className="flex items-center  p-4 md:p-5 justify-between" >
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white" style={{color:"#4F6F52"}}>
